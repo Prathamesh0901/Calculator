@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <p class="title">CALCULATOR</p>
+
+    <div class="container">
+        <p class="display"></p>
+
+        <section class="numLine">
+
+            <button onclick="updateCalculation('1');" class="operand">
+                1
+            </button>
+
+            <button onclick="updateCalculation('2');" class="operand">
+                2
+            </button>
+                
+            <button onclick="updateCalculation('3');" class="operand">
+                3
+            </button>
+
+            <button onclick="updateCalculation('+');" class="operator">
+                +
+            </button>
+
+        </section>
+
+        <section class="numLine">
+
+            <button onclick="updateCalculation('4');" class="operand">
+                4
+            </button>
+
+            <button onclick="updateCalculation('5');" class="operand">
+                5
+            </button>
+                
+            <button onclick="updateCalculation('6');" class="operand">
+                6
+            </button>
+
+            <button onclick="updateCalculation('-');" class="operator">
+                -
+            </button>
+
+        </section>
+
+        <section class="numLine">
+
+            <button onclick="updateCalculation('7');" class="operand">
+                7
+            </button>
+
+            <button onclick="updateCalculation('8');" class="operand">
+                8
+            </button>
+                
+            <button onclick="updateCalculation('9');" class="operand">
+                9
+            </button>
+
+            <button onclick="updateCalculation('*');" class="operator">
+                *
+            </button>
+
+        </section>
+
+        <section class="numLine">
+
+            <button onclick="updateCalculation('0');" class="operand">
+                0
+            </button>
+
+            <button onclick="updateCalculation('.');" class="operand">
+                .
+            </button>
+                
+            <button onclick="
+                updateCalculation('=');
+                localStorage.setItem('calculation',calculation);
+                " class="operand">
+                =
+            </button>
+
+            <button onclick="updateCalculation('/');" class="operator">
+                /
+            </button>
+
+        </section>
+
+        <section>
+
+            <button onclick="
+                updateCalculation('');
+                localStorage.setItem('calculation',calculation);
+                " class="clear">
+                    Clear All
+            </button>
+
+            <button onclick="
+                updateCalculation('--');
+                localStorage.setItem('calculation',calculation);
+                " class="delete">
+                Delete
+            </button>
+        
+        </section>
+        
+    </div>
+   
+    <script src="script.js"></script>
+    
+</body>
+</html>
